@@ -1,0 +1,192 @@
+
+
+.divC {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background:black;
+  padding: 20px;
+  min-height: 100vh;
+  
+  
+}
+
+
+.postImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 60%;
+
+  background-color:white;
+  
+}
+
+.textP {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  background-color: Green
+  opacity: 0; 
+  transform: scale(0.9); 
+  animation: fadeInOut 6s ease-in-out infinite; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: #45a049;
+
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  20% {
+      opacity: 1;
+      transform: scale(1.05); 
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  80% {
+      opacity: 0.8;
+      transform: scale(0.95); 
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+} 
+
+
+forms {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height:85vh;
+  margin-bottom: 90px;
+}
+
+.ride {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin: 3px 0;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+  border-color: #4caf50; 
+}
+
+
+.submit {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top:1px;
+
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .divC {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .postImage {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .textP {
+    font-size: 18px;
+  }
+
+  .post {
+    max-width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ride {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .submit {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .divC {
+    padding: 5px;
+  }
+
+  .postImage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .textP {
+    font-size: 16px;
+  }
+
+  .submit {
+    font-size: 14px;
+  }
+}

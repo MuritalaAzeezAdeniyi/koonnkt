@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+  font-family: Arial, sans-serif;
+    
+ }   
+  
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/best.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+
+.wrapper {
+  width: 100%;
+  max-width: 450px;
+  background: transparent;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.form-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.input-box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  margin-top: 10px;
+}
+
+.input-box input::placeholder {
+  color: #bbb;
+}
+
+
+.icon, .icons {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #bbb;
+}
+
+
+.sign-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-submit:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 30px;
+  }
+
+  form h1 {
+    font-size: 26px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .sign-submit {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  form h1 {
+    font-size: 22px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .sign-submit {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

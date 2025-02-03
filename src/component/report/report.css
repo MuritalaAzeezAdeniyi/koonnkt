@@ -1,0 +1,191 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  
+.contain {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  color:  #45a049;
+  justify-content:space-evenly ;
+  overflow: hidden;
+}
+
+.wrappered {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input input {
+  width: 100%;
+  padding: px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 95%;
+  height: 7vh;
+  color:black;
+  font-size: larger;
+  font-weight: 700;
+  margin: 10px 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.names{
+  color:Green;
+}
+
+.submits {
+  text-align: center;
+  padding: 12px;
+  background-color:  #45a049;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submits:hover {
+  background-color: #0056b3;
+}
+
+.complain-img {
+  text-align: center;
+}
+
+.complain-img h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.imgs {
+  width: 50rem;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 5rem;
+}
+
+.complain-img{
+  width: 120vh;
+  height: 100vh;
+  background-image: url(../../assets/freepik-13-2000.webp);
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.complain-img h2 {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.span{
+  font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .wrappered {
+    max-width: 90%; 
+    margin: 20px auto;
+  }
+
+  .input input {
+    font-size: 1rem; 
+    height: 6vh; 
+    padding: 10px;
+  }
+
+  .submits {
+    font-size: 14px; 
+    padding: 10px;
+  }
+
+  .imgs {
+    width: 100%; 
+    height: auto;
+  }
+
+  .complain-img {
+    height: 50vh; 
+    background-position: center top;
+  }
+
+  .complain-img h2 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+  }
+
+  .span {
+    font-size: 24px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contain {
+    padding: 10px; 
+  }
+
+  .wrappered {
+    max-width: 100%; 
+    padding: 15px; 
+  }
+
+  .input input {
+    font-size: 0.9rem; 
+    height: 5vh; 
+    padding: 8px;
+  }
+
+  .submits {
+    font-size: 13px; 
+    padding: 8px;
+  }
+
+  .imgs {
+    width: 100%; 
+    height: auto;
+  }
+
+  .complain-img {
+    height: 40vh; 
+  }
+
+  .complain-img h2 {
+    font-size: 14px; 
+    margin-bottom: 5px;
+  }
+
+  .span {
+    font-size: 18px; 
+  }
+}

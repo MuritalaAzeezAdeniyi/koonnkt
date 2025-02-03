@@ -1,0 +1,477 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    align-items: center;
+  }
+  
+  .navlon {
+    display: flex;
+    align-items: center;
+  }
+  .textD{
+    
+        height: 40vh; 
+        background-image: url('../../assets/background.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        color: #2ecc71; 
+        padding: 20px; 
+        position: relative; 
+
+      
+      
+    }
+
+    .introText, .exprience {
+      font-size: clamp(1rem, 1vw, 1rem); 
+      font-weight: bolder;
+    }
+    .textD h2, .textD p {
+        position: relative; 
+        z-index: 2; 
+      }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .ltext {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .link {
+    display: flex;
+    gap: 40px;
+    
+  }
+  
+  .linkW {
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .button {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 10px 0;
+  }
+  
+  .but {
+    padding: 1.5em 2em;
+    font-size: 0.80em;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4rem;
+    border:1px solid #a6ff00;
+    color: #a6ff00;
+    background-color: black;
+    margin: 0 15px;
+  }
+  
+  .but:hover {
+    background-color: #e1b40f;
+  }
+  
+  
+  .introduction {
+    text-align: center;
+    padding: 40px 20px;
+    background-color:b;
+  }
+  
+  .introText {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  
+  .driver {
+    color: #2ecc71;
+  }
+  
+  .passenger {
+    color:  #2ecc71;
+  }
+  
+  .exprience {
+    font-size: 2rem;
+    color: #2ecc71;
+    margin-bottom: 25px;
+  }
+  
+  .butD {
+    display: inline-flex;
+    align-items: center;
+    background-color: #a6ff00;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin: 0 10px 0 0;
+    font-size: larger;
+    flex-wrap: wrap;
+  }
+  
+  .butD:hover {
+    background-color: #e1b40f;
+  }
+  
+  .dimg {
+    width: 35px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  
+  .introCard {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 90px;
+  }
+  
+  .subCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: black;
+    font-size: large;
+    font-weight: 300;
+  }
+  
+  .introimage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .subCard p {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  
+  
+ 
+  .create{
+    font-size: 2.5rem;
+    margin-top:10px;
+  }
+  .trust{
+    font-size: xx-large;
+    font-weight: 200;
+    margin:20px 0;
+  }
+  .trustImage {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 35px;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .tclass{
+    width: 30%;
+    height: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 15px 0 25rem;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .trave{
+    margin:30px 0 0 0;
+    font-weight: 200;
+    font-size: 2.5rem;
+  }
+  .around{
+    color: #a6ff00;
+  }
+  
+  .bigCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+    
+  }
+  
+  .aroundCity {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height:60vh;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+  }
+  
+  .aroundText {
+    width: 50%;
+  }
+  .scammed{
+    font-size: 1.5rem;
+  }
+  .avoid{
+   font-size: 1.2rem;
+  }
+
+  .aimg {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .joy {
+    font-size: 3rem;
+    margin-bottom: 2px;
+    color: #2ecc71;
+  }
+  
+  .Jlogo {
+    width: 150px;
+    height: auto;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navlon {
+      margin-bottom: 20px;
+    }
+  
+    .link {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .textD {
+      height: 50vh; 
+      padding: 10px; 
+   }
+  .textD h2 {
+      font-size: 1.5em; 
+  }
+  .textD p {
+      font-size: 1em; 
+  }
+
+  .introText, .exprience {
+    font-size: clamp(1.2rem, 5vw, 3rem); 
+  }
+    .button {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .introText {
+      font-size: 1.5rem;
+    }
+  
+    .exprience {
+      font-size: 1rem;
+    }
+  
+    .introCard {
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+  
+    .subCard {
+      width: 80%;
+    }
+  
+    .butD {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .tclass {
+      width: 50%;  
+      margin: 5px auto;  
+      font-size: clamp(1.5rem, 5vw, 2rem); 
+    }
+
+    .trave {
+      font-size: clamp(1.5rem, 6vw, 2rem); 
+      margin: 20px 0 0 0; 
+    }
+  
+    .bigCard {
+      flex-direction: column;
+    
+    }
+  
+    .aroundCity {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  
+    .aroundText {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+     
+    .trust {
+      font-size: clamp(1.2rem, 6vw, 2rem); 
+    }
+    
+    .butD {
+      font-size: 1rem; 
+      padding: 8px 16px;
+    }
+  
+    .dimg {
+      height: 25px; 
+      width: 25px;
+    }
+    .create {
+      font-size: clamp(1.2rem, 6vw, 3rem); 
+    }
+  
+    .aimg {
+      width: 100%;
+      height: auto;
+    }
+  
+    .joy {
+      font-size: 1.2rem;
+      margin-top:55px;
+    }
+  
+    .Jlogo {
+      width: 120px;
+     
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ltext {
+      font-size: 1.5rem;
+    }
+  
+    .linkW {
+      font-size: 0.9rem;
+    }
+  
+    .but {
+      padding: 8px 12px;
+    }
+  
+    .introText {
+      font-size: 1.3rem;
+    }
+  
+    .exprience {
+      font-size: 0.9rem;
+    }
+  
+    .introCard {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .subCard {
+      width: 90%;
+    }
+    .create {
+      font-size: clamp(1rem, 6vw, 2.5rem); 
+      padding: 5px;  
+    }
+    .butD {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .trust {
+      font-size: 1rem; 
+      margin-bottom: 15px; 
+    }
+  
+    .trustImage {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .aroundCity {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .tclass {
+      width: 80%;  
+      font-size: clamp(1rem, 6vw, 1.5rem);  
+    }
+  
+    .trave {
+      font-size: clamp(1rem, 7vw, 1.8rem); 
+      margin: 15px 0 0 0;  
+    }
+    .aroundText {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .aimg {
+      width: 100%;
+      height: auto;
+    }
+     .introText, .exprience {
+      font-size: clamp(1rem, 4vw, 2rem); 
+     } 
+    
+    .joy {
+      font-size: 1.5rem;
+    }
+
+    .textD {
+      height: 60vh; 
+  }
+  .textD h2 {
+      font-size: 1.2em; 
+  }
+  .textD p {
+      font-size: 0.9em;
+  }
+  
+    .Jlogo {
+      width: 100px;
+    }
+  }
+  
