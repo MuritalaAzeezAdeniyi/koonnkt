@@ -11,6 +11,7 @@ import {TypeAnimation} from 'react-type-animation'
 
 
 
+
 function Navbar() {
   return (
     <div> 
@@ -20,6 +21,7 @@ function Navbar() {
         <p className='ltext'>KOONNKT</p>
       </div>
       <div className='link'>
+       <Link to="/payment" className='linkw'>Payment</Link>  
       <Link to="/post-ride" className='linkW'>Post Ride</Link>
       <Link to="/request-ride" className='linkW'>Request Ride</Link>
       <Link to="/report" className='linkW'>Report</Link>

@@ -9,6 +9,7 @@ import Sign_in from './component/sign_in/Sign_in';
 import Post_ride from './component/post_ride/Post_ride'; 
 import Request_ride from './component/request_ride/Request_ride'; 
 import Report from './component/report/Report'; 
+import Payment from './component/payment/Payment';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/post-ride" element={<Post_ride />} />
         <Route path="/request-ride" element={<Request_ride />} />
         <Route path="/report" element={<Report />} />
+        <Route path="/payment"element={<Payment/>} />
 
        
       </Routes>
