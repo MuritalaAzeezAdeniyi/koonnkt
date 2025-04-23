@@ -41,8 +41,8 @@ function Report() {
   return (
     <div className='contain'>
       <div className='complain-img'>
-     <h2><span className='span'>Your safety and experience matter to us!</span> <br/>If you’ve had any issues with another user, please feel free to share your concerns.</h2>
-      {/* <img src={Complain} alt='imgs' className='imgs'/> */}
+     <h2><span className='span'>Your safety and experience matter to us!</span> <br/> <span className='letter'> If you’ve had any issues with another user, please feel free to share your concerns. </span></h2>
+      
      </div>
       <form className='wrappered'>
         <h1 className='names'>Make Your Report Here</h1>
@@ -55,7 +55,7 @@ function Report() {
       <input type='text' value={reported} onChange={(e)=> setReported(e.target.value)} placeholder='text'/>
       </div>
       <div className='input'>
-      <label>description</label>
+      <label>description</label> 
       <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} placeholder='text'/>
       </div>
       <div className='submits' onClick={handleReport}>Submit</div>

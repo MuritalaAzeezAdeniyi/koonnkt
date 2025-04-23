@@ -42,7 +42,6 @@ function Request_ride() {
     <div className='passenger'>
       <div className='removeD'>
       <h2 className='text'>Request for a ride and connect with Driver in minutes!</h2>
-      {/* <img src={Remove} alt='request' className='requsetImage'/> */}
       </div>
       <formses>
         <h1 className='request'>Request Your Ride Here</h1>

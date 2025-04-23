@@ -169,6 +169,7 @@ body, html {
   .submits {
     font-size: 13px; 
     padding: 8px;
+    width:90% ;
   }
 
   .imgs {
@@ -187,5 +188,8 @@ body, html {
 
   .span {
     font-size: 18px; 
+  }
+  .letter{
+    font-size: 9px; 
   }
 }

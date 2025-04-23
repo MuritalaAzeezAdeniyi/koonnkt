@@ -66,7 +66,13 @@ body {
   .linkW {
     color:white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .linkws{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   
@@ -149,7 +155,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 90px;
+    margin-top: 60px;
   }
   
   .subCard {
@@ -180,6 +186,7 @@ body {
   .create{
     font-size: 2.5rem;
     margin-top:10px;
+    color: white;
   }
   .trust{
     font-size: xx-large;
@@ -207,6 +214,7 @@ body {
     margin:30px 0 0 0;
     font-weight: 200;
     font-size: 2.5rem;
+    color: white;
   }
   .around{
     color: #a6ff00;
@@ -253,13 +261,89 @@ body {
   
   .joy {
     font-size: 3rem;
-    margin-bottom: 2px;
+    margin:10px 0;
+  
     color: #2ecc71;
   }
   
   .Jlogo {
     width: 150px;
     height: auto;
+  }
+
+  .play{
+    width: 15vw;
+    height: 10vh;
+    border: solid 0.5px white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .playimg{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    margin-left: 5px;
+    
+  }
+  .playStore{
+    width: 33vw;
+    height: 20vh;
+    display: flex;
+    margin-left: 32%;
+    gap: 15px;
+    align-items: center;
+
+  }
+  .applimg{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    margin-left: 4px;
+  }
+  .icon{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+
+  }
+  .imagesDiv{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+  }
+  .foot{
+    width: 98.8vw;
+    height: 40vh;
+    background-color: white;
+    align-items: center;
+    color: black;
+    justify-content:space-evenly;
+    align-content: center;
+    display: flex;
+    
+  }
+  .logos{
+    width: 50px;
+    height: auto;
+    background-color: black;
+  }
+  .koonnkt{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 4rem;
+    margin-right: 10rem;
+  }
+  .Writefoot{
+    display: flex;
+    gap: 10rem;
+  }
+  .footOne{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
   
   
@@ -278,6 +362,7 @@ body {
       gap: 10px;
       margin-bottom: 20px;
     }
+    
     
     .textD {
       height: 50vh; 
@@ -379,6 +464,54 @@ body {
       width: 120px;
      
     }
+    .play {
+      width: 25vw;
+      height: 12vh;
+      font-size: 0.9rem; 
+    }
+
+    .playStore {
+      width: 70vw;  
+      margin-left: 5%; 
+    }
+  
+    .applimg {
+      width: 2.5rem;  
+      height: 2.5rem;
+    }
+  
+    .icon {
+      width: 3rem;  
+      height: 3rem;
+    }
+  
+    .imagesDiv {
+      width: 60vw; 
+    }
+  
+    .foot {
+      height: 45vh;  
+      flex-direction: column;  
+      justify-content: center; 
+      align-items: center;
+    }
+  
+    .koonnkt {
+      margin-right: 2rem;  
+      margin-bottom: 2rem;  
+    }
+  
+    .Writefoot {
+      gap: 2rem; 
+    }
+  
+    .footOne {
+      gap: 3px;
+    }
+  
+    .logost {
+      width: 30px;  
+    }
   }
   
   @media (max-width: 480px) {
@@ -387,6 +520,9 @@ body {
     }
   
     .linkW {
+      font-size: 0.9rem;
+    }
+    .linkws{
       font-size: 0.9rem;
     }
   
@@ -473,5 +609,70 @@ body {
     .Jlogo {
       width: 100px;
     }
+    .play {
+      width: 35vw;
+      height: 15vh;
+      font-size: 0.8rem;
+    }
+
+    .playStore {
+      width: 85vw;  
+      margin-left: 0; 
+    }
+  
+    .playimg {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .applimg {
+      width: 2rem;  
+      height: 2rem;
+    }
+  
+    .icon {
+      width: 2.5rem;  
+      height: 2.5rem;
+    }
+  
+    .imagesDiv {
+      width: 80vw;  
+    }
+  
+    .foot {
+      height: 30vh; 
+      flex-direction: column; 
+      justify-content: flex-start; 
+      padding: 1rem;  
+    }
+  
+    .koonnkt {
+      flex-direction: column; 
+      margin-right: 1rem;
+      margin-bottom: 2rem;  
+    }
+  
+    .Writefoot {
+     
+
+      display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0.8rem;
+    margin-top: -10rem; 
+    }
+  
+    .logost {
+      width: 25px; 
+    }
+    .koonnkt{
+      visibility: hidden;
+    }
+    .images{
+     margin-top: -0.1rem;
+    }
+    .playStore{
+      margin-left: 20px;
+    }
+    
   }
   

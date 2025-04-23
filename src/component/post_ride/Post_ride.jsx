@@ -11,9 +11,7 @@ function Post_ride() {
   const[departureTime,setDepartureTime] = useState("")
   const navigate = useNavigate();
   
-  // const username = 'ola15';
-  // const password = '1111';
-   
+ 
   const handlePostRide = async () => {
     try{
 

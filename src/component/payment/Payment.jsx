@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./payment.css"
+import "../verifyPayment/VerifyPayment";
+
 function Payment() {
    const [amount, setAmount] = useState('');
   const [email, setEmail] = useState('');
@@ -9,6 +11,7 @@ function Payment() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState('');
+  const [reference, setReference] = useState('')
 
   const handlePaymentSubmit = async (e) => {
     e.preventDefault();
@@ -22,10 +25,15 @@ function Payment() {
         email: email,
         amount: amount,
         currency: currency,
-      });
+      }); 
 
       if (response.data.status) {
-        setSuccessMessage('Payment Successful!');
+        console.log(response.data)
+        if(response.data.data.authorization_url)
+        window.location.href = response.data.data.authorization_url
+        setReference(response.data.data.reference)
+        console.log('Reference set:', response.data.data.reference);
+       
       } else {
         setError('Payment initialization failed!');
       }
@@ -82,6 +90,7 @@ function Payment() {
 
       {error && <p className="error">{error}</p>}
       {successMessage && <p className="success">{successMessage}</p>}
+      {reference && <VerifyPayment reference={reference} />}
     </div>
   );
 };

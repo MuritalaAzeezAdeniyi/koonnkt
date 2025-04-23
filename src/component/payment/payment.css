@@ -7,7 +7,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Heading styling */
+  
   h2 {
     text-align: center;
     color: #333;
@@ -16,21 +16,21 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Form styling */
+  
   form {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   
-  /* Form group for each input element */
+  
   .form-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
   
-  /* Input field styling */
+  
   input,
   select {
     padding: 10px;
@@ -48,7 +48,6 @@
     outline: none;
   }
   
-  /* Button styling */
   button {
     padding: 12px;
     font-size: 16px;
@@ -69,7 +68,7 @@
     background-color: #005bb5;
   }
   
-  /* Message styling */
+  
   p {
     text-align: center;
     font-size: 16px;
@@ -85,7 +84,7 @@
     color: green;
   }
   
-  /* Responsive Styling */
+  
   @media (max-width: 600px) {
     .payment-container {
       width: 90%;

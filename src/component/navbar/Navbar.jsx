@@ -8,7 +8,11 @@ import Thirdmatch from '../../assets/thirdmatch.jpg'
 import Security from '../../assets/security.jpg'
 import Comfort from '../../assets/ComfortTwo.jpg'
 import {TypeAnimation} from 'react-type-animation'
-
+import Play from "../../assets/play.png"
+import Appl from "../../assets/app.png"
+import Twitter from "../../assets/Twitter.png"
+import Facebook from "../../assets/Facebook.png"
+import Instagram from "../../assets/Instagram.png"
 
 
 
@@ -21,7 +25,7 @@ function Navbar() {
         <p className='ltext'>KOONNKT</p>
       </div>
       <div className='link'>
-       <Link to="/payment" className='linkw'>Payment</Link>  
+       <Link to="/payment" className='linkws'>Payment</Link>  
       <Link to="/post-ride" className='linkW'>Post Ride</Link>
       <Link to="/request-ride" className='linkW'>Request Ride</Link>
       <Link to="/report" className='linkW'>Report</Link>
@@ -122,13 +126,72 @@ function Navbar() {
      </div>
 
     </div>
+    <div className='playStore'>
+    <div className='play'>
+      <img src={Appl} alt='play' className='applimg'/>
+    <div className='playstoreText'>
+      <span>Download on the</span>
+      <h4>App Store</h4>
+    </div>
+    </div>
+
+    <div className='play'>
+      <img src={Play} alt='play' className='playimg'/>
+    <div className='playstoreText'>
+      <span>Get it on</span>
+      <h4>Google Play</h4>
+    </div>
+    </div>
+    </div>
+
+   
+    
    </section>
-   
-   <section className='solution' >
-   
+   <div className='foot'> 
+      <div className='iconsDiv'>
+      <div className='koonnkt'>
+        <img src={Logo} alt='logo' className='logos'/>
+        <h3>Koonnkt</h3>
+
+      </div>
+      <div className='images'>
+        {/* <img src={Twitter} alt='twitter' className='icon'/>
+        <img src={Facebook} alt='facebook' className='icon'/>
+        <img src={Instagram} alt='instagram' className='icon'/> */}
+        <span>@2025 Koonnkt Technologies Inc</span>
+      </div>
+    
+      </div>
+      <div className='Writefoot'>
+      <div className='footOne'>
+       <h3>Pages</h3>
+       <span>Post Ride</span>
+       <span>Rquest Driver</span>
+       <span>Report</span>
+       <span>payment</span>
+      </div>
+      
+      <div className='footOne'>
+       <h3>Resource</h3>
+       <span>Privacy police</span>
+       <span>Terms</span>
+       <span>FAQ</span>
+       <span>Help Center</span>
+      </div>
      
-   </section>
+      <div className='footOne'>
+       <h3>Company</h3>
+       <span>Careers</span>
+       <span>Investors</span>
+       <span>Blog</span>
+       <span>Newsroom</span>
+      </div>
+
+
+      </div>
+    </div>
    </div>
+   
   )
 }
 

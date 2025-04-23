@@ -1,12 +1,10 @@
 
-import React from 'react';
-import { useState } from 'react';
+
+
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import  Style from '../sign up/sign_up.module.css';
-import  axios from 'axios'
-import { FaUser} from "react-icons/fa6";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { MdEmail } from "react-icons/md";
+import Style from '../sign up/sign_up.module.css';
+import axios from 'axios';
 
 function Sign_up() {
   const [username, setUsername] = useState("");
@@ -41,6 +39,7 @@ function Sign_up() {
         }
       });
 
+      
       setUsername("");
       setPassword("");
       setEmail("");
@@ -50,8 +49,8 @@ function Sign_up() {
       setPhoneNumber("");
       setDrivingLicenceNumber("");
       setVehiclePlateNumber("");
-      alert("Successfully Registered");
       
+      alert("Successfully Registered");
       navigate('/');
     } catch (error) {
       console.log(error);
@@ -61,50 +60,94 @@ function Sign_up() {
   return (
     <div className={Style.containers}>
       <div className={Style.formD}>
+        <h3 className={Style.register}>Register</h3>
         <form className={Style.form}>
-          <h1>Register</h1>
           <div className={Style.input}>
-            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="username" />
-            {/* <FaUser className='icon'/> */}
+            <input 
+              type="text" 
+              value={username} 
+              onChange={(e) => setUsername(e.target.value)} 
+              placeholder="username" 
+            />
           </div>
+
           <div className={Style.input}>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" />
-            {/* < RiLockPasswordFill className='icons'/> */}
+            <input 
+              type="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              placeholder="password" 
+            />
           </div>
+
           <div className={Style.input}>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" />
-            {/* <MdEmail className='icon'/> */}
+            <input 
+              type="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              placeholder="email" 
+            />
           </div>
+
           <div className={Style.input}>
-            <input type="text" value={firstname} onChange={(e) => setFirstname(e.target.value)} placeholder="firstName" />
-            {/* <FaUser className='icon'/> */}
+            <input 
+              type="text" 
+              value={firstname} 
+              onChange={(e) => setFirstname(e.target.value)} 
+              placeholder="firstName" 
+            />
           </div>
+
           <div className={Style.input}>
-            <input type="text" value={lastname} onChange={(e) => setLastname(e.target.value)} placeholder="secondName" />
-            {/* <FaUser className='icon'/> */}
+            <input 
+              type="text" 
+              value={lastname} 
+              onChange={(e) => setLastname(e.target.value)} 
+              placeholder="secondName" 
+            />
           </div>
+
           <div className={Style.input}>
-            
             <select value={role} onChange={(e) => setRole(e.target.value)}>
-              <option value="" className='role'>Select Role</option>
+              <option value="">Select Role</option>
               <option value="ADMIN">ADMIN</option>
               <option value="DRIVER">DRIVER</option>
               <option value="PASSENGER">PASSENGER</option>
             </select>
-            <div className='icon'/>
           </div>
+
           <div className={Style.input}>
-            <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="phoneNumber" />
-            <div className='icon'/>
+            <input 
+              type="text" 
+              value={phoneNumber} 
+              onChange={(e) => setPhoneNumber(e.target.value)} 
+              placeholder="phoneNumber" 
+            />
           </div>
-          <div className={Style.input}>
-            <input type="text" value={drivingLicenceNumber} onChange={(e) => setDrivingLicenceNumber(e.target.value)} placeholder="drivingLicenceNumber" />
-            <div className='icon'/>
-          </div>
-          <div className={Style.input}>
-            <input type="text" value={vehiclePlateNumber} onChange={(e) => setVehiclePlateNumber(e.target.value)} placeholder="vehiclePlateNumber" />
-            <div className='icon'/>
-          </div>
+
+          {/* Render the driver's fields conditionally based on the role */}
+          {role === "DRIVER" && (
+            <>
+              <div className={Style.input}>
+                <input 
+                  type="text" 
+                  value={drivingLicenceNumber} 
+                  onChange={(e) => setDrivingLicenceNumber(e.target.value)} 
+                  placeholder="drivingLicenceNumber" 
+                />
+              </div>
+
+              <div className={Style.input}>
+                <input 
+                  type="text" 
+                  value={vehiclePlateNumber} 
+                  onChange={(e) => setVehiclePlateNumber(e.target.value)} 
+                  placeholder="vehiclePlateNumber" 
+                />
+              </div>
+            </>
+          )}
+
           <div className={Style.signUpsubmit} onClick={handleSignUp}>submit</div>
         </form>
       </div>
@@ -113,4 +156,5 @@ function Sign_up() {
 }
 
 export default Sign_up;
+
 
