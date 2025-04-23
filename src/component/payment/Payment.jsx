@@ -20,7 +20,7 @@ function Payment() {
     setSuccessMessage('');
 
     try {
-      const response = await axios.post(' http://localhost:8080/initialize', {
+      const response = await axios.post(' https://cap-stone-project-3.onrender.com/initialize', {
        
         email: email,
         amount: amount,

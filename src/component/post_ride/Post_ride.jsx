@@ -25,7 +25,7 @@ function Post_ride() {
           "departureTime": departureTime
         }
 
-        const response = await axios.post("http://localhost:8080/api/PostRide/createRide",payload,{
+        const response = await axios.post("https://cap-stone-project-3.onrender.com/api/PostRide/createRide",payload,{
           headers:{
             'content-Type': 'application/json',
             'Authorization': `Basic ${btoa(`${username}:${password}`)}`

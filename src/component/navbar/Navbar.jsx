@@ -10,9 +10,7 @@ import Comfort from '../../assets/ComfortTwo.jpg'
 import {TypeAnimation} from 'react-type-animation'
 import Play from "../../assets/play.png"
 import Appl from "../../assets/app.png"
-import Twitter from "../../assets/Twitter.png"
-import Facebook from "../../assets/Facebook.png"
-import Instagram from "../../assets/Instagram.png"
+
 
 
 
@@ -37,15 +35,12 @@ function Navbar() {
     </nav>
    <section className='introduction'>
     <div className='textD'>
-      {/* <h2 className='introText'>
-      "Connect with<span className='driver'> Drivers</span>  and <span className='passenger'>Passengers</span> in minutes <br/> your ride, your way!
-      </h2>
-      <p className='exprience'>Exprience seamless and affordable rides anytime, anywhere</p> */}
+      
       <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
+        
         'CONNECT WITH DRIVERS and PASSENGERS',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000, 
         'IN A MINUTES YOUR RIDE, YOUR WAY',
         1000,
         'EXPRIENCE SEAMLESS AND AFFORDABLE RIDE',
@@ -155,9 +150,7 @@ function Navbar() {
 
       </div>
       <div className='images'>
-        {/* <img src={Twitter} alt='twitter' className='icon'/>
-        <img src={Facebook} alt='facebook' className='icon'/>
-        <img src={Instagram} alt='instagram' className='icon'/> */}
+        
         <span>@2025 Koonnkt Technologies Inc</span>
       </div>
     

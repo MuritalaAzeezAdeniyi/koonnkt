@@ -21,7 +21,7 @@ function Report() {
       "description": description
     }
 
-    const response = await axios.post("http://localhost:8080/api/report/makeReport",payload,{
+    const response = await axios.post("https://cap-stone-project-3.onrender.com/api/report/makeReport",payload,{
       headers:{
           'content-Type': 'application/json',
           'Authorization': `Basic ${btoa(`${username}:${password}`)}`

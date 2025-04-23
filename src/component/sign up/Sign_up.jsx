@@ -33,7 +33,7 @@ function Sign_up() {
         "vehiclePlateNumber": vehiclePlateNumber
       };
 
-      const response = await axios.post("http://localhost:8080/api/users/register", payload, {
+      const response = await axios.post("https://cap-stone-project-3.onrender.com/api/users/register", payload, {
         headers: {
           'Content-Type': 'application/json'
         }

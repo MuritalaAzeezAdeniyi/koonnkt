@@ -12,7 +12,7 @@ const VerifyPayment = ({ reference }) => {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.get(`http://localhost:8080/verify/${reference}`);
+            const response = await axios.get(`https://cap-stone-project-3.onrender.com/verify/${reference}`);
             setVerificationResponse(response.data);
         } catch (error) {
             console.error('Verification error:', error);
