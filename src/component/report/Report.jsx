@@ -58,7 +58,7 @@ function Report() {
       <label>description</label> 
       <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} placeholder=''/>
       </div>
-      <div className='submits' onClick={handleReport}>Submit</div>
+      <div className='submits' onClick={handleReport}>Submit</div> 
       </form>
       
     </div>
