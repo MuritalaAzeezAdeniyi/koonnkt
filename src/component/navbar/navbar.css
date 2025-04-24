@@ -365,8 +365,9 @@ body {
     
     
     .textD {
-      height: 50vh; 
+      height: 10vh; 
       padding: 10px; 
+      
    }
   .textD h2 {
       font-size: 1.5em; 
@@ -404,6 +405,7 @@ body {
     .butD {
       width: 100%;
       justify-content: center;
+      top: 10rem;
     }
 
     .tclass {
@@ -512,6 +514,14 @@ body {
     .logost {
       width: 30px;  
     }
+    .textD {
+      height:10vh; 
+      background-size: contain; /* Ensures the image fits without being cut off */
+      background-position: top; 
+      margin-top: 0; /* Remove any extra space above */
+      margin-bottom: 0; /* Remove any extra space below */
+      padding: 0; 
+  }
   }
   
   @media (max-width: 480px) {

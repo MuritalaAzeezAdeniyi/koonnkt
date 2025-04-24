@@ -48,15 +48,15 @@ function Report() {
         <h1 className='names'>Make Your Report Here</h1>
       <div className='input'>
       <label>reporter</label>
-      <input type='text'value={reporter} onChange={(e)=> setReporter(e.target.value)} placeholder='text'/>
+      <input type='text'value={reporter} onChange={(e)=> setReporter(e.target.value)} placeholder=''/>
       </div>
       <div className='input'>
       <label>reported</label>
-      <input type='text' value={reported} onChange={(e)=> setReported(e.target.value)} placeholder='text'/>
+      <input type='text' value={reported} onChange={(e)=> setReported(e.target.value)} placeholder=''/>
       </div>
       <div className='input'>
       <label>description</label> 
-      <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} placeholder='text'/>
+      <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} placeholder=''/>
       </div>
       <div className='submits' onClick={handleReport}>Submit</div>
       </form>

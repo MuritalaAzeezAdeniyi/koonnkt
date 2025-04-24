@@ -45,12 +45,12 @@ function Request_ride() {
       </div>
       <formses>
         <h1 className='request'>Request Your Ride Here</h1>
-        <label>departureLocation</label>
-        <input type='text' value={departureLocation} onChange={(e) => setDepartureLocation(e.target.value)} placeholder='text'/>
-        <label>destinationLocation</label>
-        <input type='text' value={destinationLocation} onChange={(e)=> setDestinationLocation(e.target.value)} placeholder='text'/>
-        <label>departureTime</label>
-        <input type='datetime-local' value={departureTime} onChange={(e)=>setDepartureTime(e.target.value)} placeholder='date'/>
+        <label>DepartureLocation</label>
+        <input type='text' value={departureLocation} onChange={(e) => setDepartureLocation(e.target.value)} placeholder=''/>
+        <label>DestinationLocation</label>
+        <input type='text' value={destinationLocation} onChange={(e)=> setDestinationLocation(e.target.value)} placeholder=''/>
+        <label>DepartureTime</label>
+        <input type='datetime-local' value={departureTime} onChange={(e)=>setDepartureTime(e.target.value)} placeholder=''/>
         <div className='submits' onClick={handleRequestRide}>submit</div>
       </formses>
     </div>
